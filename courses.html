@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"/>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style fil.css" />
+  </head>
+  <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+  
+    <div class="container">
+      <!-- Nav -->
+      <nav class="main-nav">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcGLNxTjcELZ-haWfqbozJIbTb1vLs_XoMGF21FHCc&s" alt="Microsoft" class="logo">
+  
+        <ul class="main-menu">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <!-- filters -->
+    <div class="menu-btn">
+    <nav>
+    <div class="wrapper">
+        <div id="filter">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search courses name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <h3>Category</h3>
+      <div id="buttons">
+        <div><button class="button-value" onclick="filterProduct('all')">All</button></div>
+        <div><button class="button-value" onclick="filterProduct('HTML')">HTML</button></div>
+        <div><button class="button-value" onclick="filterProduct('JS')">JS</button></div>
+        <div><button class="button-value" onclick="filterProduct('PHP')">PHP</button></div>
+        <div><button class="button-value" onclick="filterProduct('CSS')"> CSS</button></div>
+        </div>
+
+        <h2>price</h2>
+        <input id="prix" type="range" value="169" min="0" max="169">
+        <h5>value:  <span id="prixvalue"></span> $</h5>
+    </div>
+    <div class="container2 col-10 d-flex flex-wrap " >
+
+    </div>
+      </div>
+      <div id="courses"></div>
+      </div>
+  </nav>
+    <!-- Script -->
+    <script src="code fil.js"></script>
+  </body>
+</html>
